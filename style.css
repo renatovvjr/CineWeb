@@ -1,0 +1,159 @@
+html{
+  height: 100%;
+}
+.fundodestaques {
+  background-color: white;
+  display:inline-block;
+  color:black;
+  text-align: center;  
+}
+.header {
+  background: rgb(17, 0, 0);
+  margin-bottom: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+.container{
+  background: rgba(0, 0, 0, 0.658);
+}
+body{
+  background: url(fundocinema1.jpg) center;
+}
+.btn1{
+  text-align:right; 
+  width:100%; 
+  padding:10px;
+  margin-top: 5px;
+}
+.jumbotron {
+  background: url(oscar2021.webp) center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.noticias {
+  color: white;
+}
+h12 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pesquisa {
+  text-align: right;
+  padding: 10px;
+}
+.pesquisar{
+  width: 100%;
+  top: 15px;
+}
+.dest{
+  color: white;
+  padding: 10px;
+}
+.header_area {
+  padding: 20px; 
+}
+.menu_area{
+  margin-top: 30px;
+}
+.menu_area nav a{
+  background: rgba(85, 62, 4, 0.747);
+  color: white;
+  margin-bottom: 10px;
+}
+.menu_area nav a:hover{
+  background: rgba(85, 62, 4, 0.336);
+}
+.active{
+  background-color: #696369 !important;
+}
+.logo {
+  width: 150px;  
+}
+.carousel-item{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+.row {
+  padding: 2px;
+}
+
+.fundodestaques{
+  background: white;
+  height: 550px;
+  width: 200px;
+  display: flex;
+  align-items: center;  
+}
+
+.card-img-top{
+  height: auto;
+  max-width: 200px;
+}
+.d-block img{
+  height: auto;
+  max-width: 400px;
+  width: 100%;
+}
+.post-title {
+  text-align: center;
+}
+.post-top {
+  text-align: center;
+}
+.modal-title{
+  text-align: center;
+}
+.modal-body img{
+  width: 100%;
+}
+.footer {
+  margin-top: 10px;
+  background: rgba(17, 0, 0, 0.932);
+  color:white;
+}
+.footer_area{
+  padding: 20px;
+  text-align: center;
+}
+
+/*Destaques*/
+.destaques{
+  background: rgba(139, 133, 133, 0.932);
+  margin-bottom: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  width: 0px;
+}
+
+/*Localização*/
+.display-4 {
+  color: rgb(209, 178, 1);
+}
+.localiz {
+  color: rgb(187, 169, 5);
+}
+.local {
+  color:rgb(121, 103, 3);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*CSS Menu Mobile - Inicio*/
+#menuToggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+}
+
+/*CSS Menu Mobile - Fim*/
+@media screen and (max-width: 600px) {
+  .cartoestodos{}
+  .fundodestaques{
+    width: 100%;
+    margin: 5px;
+  }  
+}

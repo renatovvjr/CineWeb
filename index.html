@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Site CineWeb</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+         crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+   </head>
+   <body>
+      <!--Menu inicial-->
+      <header class="container header">
+         <div class="row">
+            <div class="col-12 header_area">
+               <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                     <img src="logo1.png" class="logo">
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-8 col-lg-10 menu_area">
+                     <nav class="nav nav-pills flex-column flex-sm-row">
+                        <input type="checkbox" id="menuToggle">
+                        <label for="menuToggle" class="menu-icon">
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times-circle"></i>   
+                        </label>              
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Página</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Filmes em Destaques</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Sobre o CineWeb</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#">Contatos</a>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Botão localizar-->
+         <div class="pesquisar">
+            <form class="form-inline mt-2 mt-md-0">
+               <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Search">
+               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+         </div>
+         <!--Botão localizar - fim-->
+      </header>
+      <!--Fim do Menu Inicial-->
+      <!-- Modal comédia -->
+      <div class="modal fade" id="modalComedia" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">AS BRANQUELAS</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <img src="asbranquelas.jpeg" alt="">          
+                  <p class="modal-title">Sinopse: Dois irmãos agentes do FBI, Marcus e Kevin Copeland, acidentalmente evitam que bandidos sejam presos em uma apreensão de drogas. Como castigo, eles são forçados a escoltar um par de socialites nos Hamptons. Porém, quando as meninas descobrem o plano da agência, se recusam a ir. Sem opções, Marcus e Kevin decidem posar como as irmãs, transformando-se de homens afro-americanos em um par de loiras.</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+                  <button type="button" class="btn btn-warning">
+                     <a href="https://www.youtube.com/watch?v=cjnmsoJavj0 ">ASSISTIR AGORA</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal Ação-->
+      <div class="modal fade" id="modalAcao" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">MATRIX RELOADED</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="modal-body">
+      <img src="matrix.jpg" alt="">          
+      <p class="modal-title">Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro. À medida que o sonho se repete, ele começa a levantar dúvidas sobre a realidade. E quando encontra os misteriosos Morpheus e Trinity, ele descobre que é vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas e cria a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia.</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+      <button type="button" class="btn btn-warning">
+      <a href="https://www.youtube.com/watch?v=MN1wPmnNJxo ">ASSISTIR AGORA</a>
+      </div>
+      </div>
+      </div>
+      </div> 
+      <!-- Modal Romance-->
+      <div class="modal fade" id="modalRomance" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+      <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">POR LUGARES INCRÍVEIS</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="modal-body">
+      <img src="porlugares.jfif" alt="">          
+      <p class="modal-title">Dois adolescentes que estão passando por momentos difíceis criam um forte laço quando embarcam em uma jornada transformadora para visitar as maravilhas do estado de Indiana, nos Estados Unidos.</p>
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+      <button type="button" class="btn btn-warning">
+      <a href="https://www.youtube.com/watch?v=9zhzD0kWSi0">ASSISTIR AGORA</a>
+      </button>
+      </div>
+      </div>
+      </div>
+      </div> 
+      <!-- Modal Suspense-->
+      <div class="modal fade" id="modalSuspense" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">O POÇO</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <img src="Post4.jpg" alt="">          
+                  <p class="modal-title">Em uma prisão onde os detentos são alimentados por uma plataforma descendente, os que estão nos níveis mais altos comem mais do que precisam enquanto os dos andares mais baixos ficam com as migalhas. Até que um homem decide mudar o sistema.</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">FECHAR</button>
+                  <button type="button" class="btn btn-warning">
+                  <a href="https://www.youtube.com/watch?v=7CxKksqGrbI">ASSISTIR AGORA</a>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <main class="container main">
+         <div class="row">
+            <div class="col-12">
+               <!--Duas colunas do carrossel e dos botões-->
+               <div class="row main_area">
+                  <div class="col-12 col-sm-12 col-md-10">
+                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                           <div class="carousel-item active">
+                              <center><img src="Post1.jfif" class="d-block" alt="Batman: Alma do Dragão"></center>
+                              <h6 class="post-title">
+                                 <a href="https://www.youtube.com/watch?v=cT5JCC1w95U">Batman: Alma do Dragão</a>
+                              </h6>
+                              <p class="post-top">TOP 1 BRASIL</p>
+                           </div>
+                           <div class="carousel-item">
+                              <center><img src="Post2.jpg" class="d-block" alt="A Sentinela"></center>
+                              <h6 class="post-title">
+                                 <a href="https://www.youtube.com/watch?v=6TBQwFEUBKA">A Sentinela</a>
+                              </h6>
+                              <p class="post-top">TOP 2 BRASIL</p>
+                           </div>
+                           <div class="carousel-item">
+                              <center><img src="Post3.jpg" class="d-block" alt="Creed II"></center>
+                              <h6 class="post-title">
+                                 <a href="https://www.youtube.com/watch?v=HKXoW8FISj4">Creed II</a>
+                              </h6>
+                              <p class="post-top">TOP 3 BRASIL</p>
+                           </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-2  menu_area">
+                     <nav class="nav nav-pills flex-column flex-sm-row">
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal" data-target="#modalComedia">Comédia</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal" data-target="#modalAcao">Ação</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal" data-target="#modalRomance">Romance</a>
+                        <a class="flex-sm-fill text-sm-center nav-link" href="#" data-toggle="modal" data-target="#modalSuspense">Suspense</a>
+                     </nav>
+                  </div>
+               </div>
+               <!--Cards de anuncio-->
+               <!--Destaques da semana-->
+               <center>
+                  <div>
+                     <h2 class="dest">DESTAQUES DA SEMANA</h2>
+                  </div>
+               </center>
+               <div class="dropdown pesquisa">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Selecione a categoria do filme
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                     <a class="dropdown-item" href="#">Comédia</a>
+                     <a class="dropdown-item" href="#">Ação</a>
+                     <a class="dropdown-item" href="#">Romance</a>
+                     <a class="dropdown-item" href="#">Suspense / Terror</a>              
+                     <a class="dropdown-item" href="#">Aventura</a>
+                     <a class="dropdown-item" href="#">Ficção Científica</a>
+                  </div>
+               </div>
+              <center><div class="row">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                     <div class="card fundodestaques">
+                        <center><img src="msgpvoce.jpg" class="card-img-top" alt="Batman"></center>
+                        <div class="card-body">
+                           <center>
+                              <h5 class="card-title">Mensagem para Você</h5>
+                           </center>
+                           <center>
+                              <p class="card-text">Um romance apaixonante para seu final de semana. Hoje o amor está na sua tela. Não perca!</p>
+                           </center>
+                           <center><a href="https://www.youtube.com/watch?v=4xpFc3b2a0c" class="btn btn-warning">ASSISTA AGORA</a></center>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                     <div class="card fundodestaques">
+                        <center><img src="missaoimpossivel.jpg" class="card-img-top" alt="Missão Impossível"></center>
+                        <div class="card-body">
+                           <center>
+                              <h5 class="card-title">Missão Impossível</h5>
+                           </center>
+                           <center>
+                              <p class="card-text">A trilogia Missão Impossível começou por aqui. Um filme empolgante que você não pode perder.</p>
+                           </center>
+                           <center><a href="https://www.youtube.com/watch?v=Ohws8y572KE" class="btn btn-warning">ASSISTA AGORA</a></center>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                     <div class="card fundodestaques">
+                        <center><img src="osoutros.jpg" class="card-img-top" alt="Os Outros"></center>
+                        <div class="card-body">
+                           <center>
+                              <h5 class="card-title">Os Outros</h5>
+                           </center>
+                           <center>
+                              <p class="card-text">Para os apaixonados por suspense, esse filme vai te tirar o fôlego. Cuidado para não se assustar!!!</p>
+                              <p></p>
+                           </center>
+                           <center><a href="https://www.youtube.com/watch?v=iZmV5gOwHRI" class="btn btn-warning">ASSISTA AGORA</a></center>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                     <div class="card fundodestaques">
+                        <center><img src="vingadores.jpg" class="card-img-top" alt="Os Vingadores"></center>
+                        <div class="card-body">
+                           <center>
+                              <h5 class="card-title">Os Vingadores</h5>
+                           </center>
+                           <center>
+                              <p class="card-text">Dos quadrinhos para as telonas. Sucesso em todo o mundo. Não perca. Prepare a pipoca!</p>
+                              <p></p>
+                           </center>
+                           <center><a href="https://www.youtube.com/watch?v=KeNEGtsCWEk" class="btn btn-warning">ASSISTA AGORA</a></center>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="btn1"><a href="#" class="btn btn-lg btn-secondary">+ Veja mais Destaques</a>
+               </div>
+            </div></center>
+         </div>
+         <!--Destaques da semana - Fim-->
+         <!--Notícias-->
+         <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <h12>Últimas Notícias:</h12>
+            <div class="col-md-12 px-0 imgoscar">
+               <h1 class="display-4 font-italic">Oscar 2021: O que pode acontecer de inédito?</h1>
+               <p class="lead my-3">Vitória de diretora chinesa e diversidade entre os premiados nas categorias de atuação estão entre as marcas históricas que podem acontecer neste domingo</p>
+               <p class="lead mb-0"><a href="https://g1.globo.com/pop-arte/cinema/oscar/2021/noticia/2021/04/24/oscar-2021-o-que-pode-acontecer-de-inedito-na-premiacao.ghtml" class="text-white font-weight-bold">Continue Lendo...</a></p>
+            </div>
+         </div>
+         <div class="row mb-2">
+            <div class="col-md-6 noticias">
+               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                     <strong class="d-inline-block mb-2 text-primary">Notícias no mundo</strong>
+                     <h3 class="mb-0">Godzilla vs Kong</h3>
+                     <div class="mb-1 text-muted">Abril 2021</div>
+                     <p class="card-text mb-auto">Conheça todos os personagens humanos no filme do MonsterVerse</p>
+                     <a href="https://www.adorocinema.com/noticias/filmes/noticia-158500/" class="stretched-link">Continue lendo</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                     <svg class="bd-placeholder-img" width="0px" height="0px"><img src="godkong.jfif" alt=""></svg>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 noticias">
+               <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                  <div class="col p-4 d-flex flex-column position-static">
+                     <strong class="d-inline-block mb-2 text-success">Notícias no Brasil</strong>
+                     <h3 class="mb-0">XUXA: Amor, Estranho Amor</h3>
+                     <div class="mb-1 text-muted">Abril 2021</div>
+                     <p class="mb-auto">Xuxa muda postura e filme censurado é exibido na TV</p>
+                     <a href="https://veja.abril.com.br/blog/tela-plana/xuxa-muda-postura-e-filme-censurado-sera-exibido-na-tv/" class="stretched-link">Continue lendo</a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                     <svg class="bd-placeholder-img" width="0px" height="0px"><img src="amorestranhoamor.jfif" alt=""></svg>
+                  </div>
+               </div>
+               <div class="btn1"><a href="#" class="btn btn-lg btn-secondary">+ Carregar mais notícias</a>
+               </div>
+            </div>
+         </div>
+         <!--Notícias - fim-->
+         <!--Criticas-->
+         <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 destaques">
+               <p>Avaliação 1</p>
+               <center><img src="fujac.jpg" alt=""></center>
+               <h2>FUJA</h2>
+               <p>Filme tenso e asfixiante sobre jovem mantida aos cuidados da mãe devido a diversas doenças e paraplegia. Roteiro bom e final interessante. Vale a pena.</p>
+               <a href="https://www.youtube.com/watch?v=Y0-RFZDmycQ">ASSISTA AGORA</a>
+               <P>MUITO BOM!</P>
+               <P>QUEM AVALIOU: Antônio Carlos</P>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 destaques">
+               <p>Avaliação 2</p>
+               <center><img src="pchefaoc.jfif" alt=""></center>
+               <h2>O PODEROSO CHEFÃO</h2>
+               <p>Simplesmente o maior filme da história! Marlon Brando e Al Pacino perfeitos!</p>
+               <a href="https://www.youtube.com/watch?v=buEh-9XBupk">ASSISTA AGORA</a>           
+               <P>EXCELENTE!</P>
+               <P>QUEM AVALIOU: Juarez Vilaça</P>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 destaques">
+               <p>Avaliação 3</p>
+               <center><img src="alistasc.jfif" alt=""></center>
+               <h2>A LISTA DE SCHINDLER</h2>
+               <p>É um atrevimento chamar essa obra prima simplesmente de "filme". Deveriam emoldurar esse filme e colocar em museus ao lado de Monalisa e demais obras primas.</p>
+               <a href="https://www.youtube.com/watch?v=GAf0nGq_FXQ">ASSISTA AGORA</a>
+               <P>ESPETACULAR!</P>
+               <P>QUEM AVALIOU: Thiago Andrade</P>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 destaques">
+               <p>Avaliação 4</p>
+               <center><img src="coringac.jfif" alt=""></center>
+               <h2>O CORINGA</h2>
+               <p>Extraordinário!!! Não se trata de um filme de super heróis. É um drama psicológico de tirar o fôlego. Um filme adulto, mto bem conduzido e com roteiro e interpretações impecáveis.</p>
+               <a href="https://www.youtube.com/watch?v=jfVTJm9NilA">ASSISTA AGORA</a>
+               <P>O MELHOR</P>
+               <P></P>
+               <P>QUEM AVALIOU: Michelle Soares</P>
+            </div>
+         </div>
+         <div class="btn1"><a href="#" class="btn btn-lg btn-secondary">+ Carregar mais avaliações</a>
+         </div>
+         </div>
+         <!--Fim criticas-->
+         <!--MAPA-->
+         <div>
+            <center>
+               <h1 class="localiz">NOSSA LOCALIZAÇÃO:</h1>
+            </center>
+            <P></P>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d240097.00529393676!2d-44.104136286466996!3d-19.90266148348103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1619243399021!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+         </div>
+      </main>
+      <!--Rodapé inicio-->
+      <footer class="container footer">
+         <div class="row">
+            <div class="col-12 col-md">
+               <img class="mb-2" src="logo2.png" alt="" width="150" height="30">
+               <small class="d-block mb-3 text-muted">&copy; 2020-2021</small>
+            </div>
+            <div class="col-6 col-md">
+               <h5>Conheça a CineWeb</h5>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Quem Somos</a></li>
+                  <li><a class="text-muted" href="#">Nossa História</a></li>
+                  <li><a class="text-muted" href="#">Pessoas</a></li>
+                  <li><a class="text-muted" href="#">Trabalhe Conosco</a></li>
+               </ul>
+            </div>
+            <div class="col-6 col-md">
+               <h5>Destaques da página</h5>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Filmes em Destaques</a></li>
+                  <li><a class="text-muted" href="#">Notícias</a></li>
+                  <li><a class="text-muted" href="#">Críticas da semana</a></li>
+               </ul>
+            </div>
+            <div class="col-6 col-md">
+               <h5>Contatos</h5>
+               <ul class="list-unstyled text-small">
+                  <li><a class="text-muted" href="#">Fale Conosco</a></li>
+                  <li><a class="text-muted" href="#">Onde Estamos</a></li>
+                  <p></p>
+                  <li><a class="text-muted" href="#">Nossas Redes Sociais:</a></li>
+                  <li>
+                     <button class="btn btn-outline-secondary local"><i class="fab fa-instagram"></i>Instagram</button>
+                     <button class="btn btn-outline-secondary local"><i class="fab fa-whatsapp"></i>Whatsapp</button>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12 footer_area">
+               CineWeb - Todos os direitos reservados - 2021
+            </div>
+         </div>
+      </footer>
+      <!--Rodapé fim-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+         crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+         crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
