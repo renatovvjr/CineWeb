@@ -70,6 +70,10 @@ h12 {
 .logo {
   width: 150px;  
 }
+
+.poster{
+  height: 400px;
+}
 .carousel-item{
   flex-wrap: wrap;
   justify-content: space-between;
