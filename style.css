@@ -5,7 +5,7 @@ html{
   background-color: white;
   display:inline-block;
   color:black;
-  text-align: center;  
+  margin-bottom: 10px; 
 }
 .header {
   background: rgb(17, 0, 0);
@@ -84,8 +84,8 @@ h12 {
 }
 
 .fundodestaques{
-  background: white;
-  height: 550px;
+  background: rgb(196, 193, 193);
+  height: 450px;
   width: 200px;
   display: flex;
   align-items: center;  
@@ -155,7 +155,7 @@ h12 {
 
 /*CSS Menu Mobile - Fim*/
 @media screen and (max-width: 600px) {
-  .cartoestodos{}
+ 
   .fundodestaques{
     width: 100%;
     margin: 5px;
